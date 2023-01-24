@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:fig"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <DockPanel Background="#FFD8D8F5">
-        <StackPanel >
+        Title="Фигуры" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <DockPanel >
+        <StackPanel Background="#FFD8D8F5">
             <StackPanel Orientation="Vertical" Background="#FF8888D4" HorizontalAlignment="Right" Height="436"  Width="135" VerticalAlignment="Bottom">
                 <TextBox Text="100" Width="60" Height="30" FontSize="20" Margin="10" HorizontalAlignment="Right" ></TextBox>
                 <TextBox Text="100" Width="60" Height="30" FontSize="20" Margin="10" HorizontalAlignment="Right" ></TextBox>
