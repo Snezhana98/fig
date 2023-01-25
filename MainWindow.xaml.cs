@@ -24,5 +24,35 @@ namespace fig
         {
             InitializeComponent();
         }
+
+        private void OnCliclBox(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickCircle(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickFill(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickCoord(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CoordX(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void CoordY(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
