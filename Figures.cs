@@ -7,29 +7,19 @@ using System.Windows.Shapes;
 
 namespace fig
 {
-    abstract class Figures
+    public abstract class Figures
     {
         Canvas canvas;
         protected Shape shape;
-        Figures(Canvas canvas) { }
-        abstract Coord(double x, double y) { }
-        virtual SetCorol(Brush col)
+        public Figures(Canvas canvas) 
         {
-            Shape.Fill = col;
+            this.canvas = canvas;
+        }
+        public abstract void Coord(double x, double y);
+        public virtual void SetColor()
+        {
+            
         }
     }
-    class Box: Figures
-    {
-        Box(Canvas canvas, double x, double y) :Figures(canvas)
-        {
-            shape = new Rectangle();
-            Canvas.Children.Add(shape);
-            Canvas.SetTop(shape,  y);
-            Canvas.SetLeft(shape, x);
-            override Coord (double x, double y) {
-            Canvas.SetTop(shape, y);
-            Canvas.SetLeft(shape, x);
-        }
-        }
-    }
+    
 }

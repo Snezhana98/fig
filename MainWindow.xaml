@@ -7,20 +7,20 @@
         mc:Ignorable="d"
         Title="Фигуры" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <DockPanel >
-        <StackPanel Orientation="Vertical" Background="#FF8888D4" Height="436"  Width="135" VerticalAlignment="Bottom" DockPanel.Dock="Right">
-            <StackPanel x:Name="Text" Orientation="Horizontal">
-                <TextBlock Text="X: " FontSize="20" Margin="30, 20, 10, 10"/>
-                <TextBox Text="100" Width="60" Height="30" FontSize="20" Margin="10,20, 10, 10" HorizontalAlignment="Right" TextChanged="CoordX" />
+        <StackPanel Orientation="Vertical" Background="#FF8888D4" DockPanel.Dock="Right">
+            <StackPanel Orientation="Horizontal" Margin="5,10" HorizontalAlignment="Center">
+                <TextBlock Text="X: " FontSize="20"/>
+                <TextBox x:Name="coordX" Text="100" Width="60" FontSize="20" />
             </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="Y: " FontSize="20" Margin="30, 10, 10, 10"/>
-                <TextBox Text="100" Width="60" Height="30" FontSize="20" Margin="10" HorizontalAlignment="Right" TextChanged="CoordY" />
+            <StackPanel Orientation="Horizontal" Margin="5,10" HorizontalAlignment="Center">
+                <TextBlock Text="Y: " FontSize="20"/>
+                <TextBox x:Name="coordY" Text="100" Width="60" FontSize="20" />
             </StackPanel>
-                <Button Content="Применить координаты" FontSize="20" Margin="10" Click="OnClickCoord" />
-                <Button Content="Поменять цвет" FontSize="20" Margin="10" Click="OnClickFill"></Button>
+                <Button Content="Координаты" FontSize="20" Margin="10" Click="OnClickCoord" />
+                <Button Content="Цвет" FontSize="20" Margin="10" Click="OnClickFill"></Button>
                 <Button Content="Круг" FontSize="20" Margin="10" Click="OnClickCircle"></Button>
-            <Button Content="Квадрат" FontSize="20" Margin="10" Click="OnCliclBox"></Button>
+            <Button Content="Квадрат" FontSize="20" Margin="10" Click="OnClickBox"></Button>
         </StackPanel>
-        <Canvas Background="#FFB4CBE8"/>
+        <Canvas x:Name="canvas" Background="#FFB4CBE8"/>
     </DockPanel>
 </Window>
