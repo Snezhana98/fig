@@ -53,5 +53,63 @@ namespace fig
             list.Last().Coord(double.Parse(coordX.Text), double.Parse(coordY.Text));
             
         }
+
+        private void OnClickRectangle(object sender, RoutedEventArgs e)
+        {
+            var pryamoygolnik = new Pryamoygolnik(canvas, double.Parse(coordX.Text), double.Parse(coordY.Text));
+            list.Add(pryamoygolnik);
+        }
+
+        private void OnClickEllipse(object sender, RoutedEventArgs e)
+        {
+            var oval = new Oval(canvas, double.Parse(coordX.Text), double.Parse(coordY.Text));
+            list.Add(oval);
+        }
+
+        private void OnClickStar(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickPicture(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickLeft(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickRight(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickUp(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickDown(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+
+        private void OnClickBefore(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickNext(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OnClickSizes(object sender, RoutedEventArgs e)
+        {
+            list.Last().Sizes(double.Parse(TextHeigth.Text), double.Parse(TextWidth.Text));
+        }
     }
 }

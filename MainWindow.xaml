@@ -5,21 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:fig"
         mc:Ignorable="d"
-        Title="Фигуры" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Фигуры" Height="545" Width="868" WindowStartupLocation="CenterScreen">
     <DockPanel >
         <StackPanel Orientation="Vertical" Background="#FF8888D4" DockPanel.Dock="Right">
-            <StackPanel Orientation="Horizontal" Margin="5,10" HorizontalAlignment="Center">
-                <TextBlock Text="X: " FontSize="20"/>
-                <TextBox x:Name="coordX" Text="100" Width="60" FontSize="20" />
+            <StackPanel Orientation="Horizontal" Margin="5,5" HorizontalAlignment="Center">
+                <TextBlock Text="X: " FontSize="14"/>
+                <TextBox x:Name="coordX" Text="100" Width="40" FontSize="14" />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="5,10" HorizontalAlignment="Center">
-                <TextBlock Text="Y: " FontSize="20"/>
-                <TextBox x:Name="coordY" Text="100" Width="60" FontSize="20" />
+            <StackPanel Orientation="Horizontal" Margin="5,5" HorizontalAlignment="Center">
+                <TextBlock Text="Y: " FontSize="14"/>
+                <TextBox x:Name="coordY" Text="100" Width="40" FontSize="14" />
             </StackPanel>
-                <Button Content="Координаты" FontSize="20" Margin="10" Click="OnClickCoord" />
-                <Button Content="Цвет" FontSize="20" Margin="10" Click="OnClickFill"></Button>
-                <Button Content="Круг" FontSize="20" Margin="10" Click="OnClickCircle"></Button>
-            <Button Content="Квадрат" FontSize="20" Margin="10" Click="OnClickBox"></Button>
+            <Button Content="Координаты" FontSize="14" Margin="5" Click="OnClickCoord" />
+            <Button Content="Цвет" FontSize="14" Margin="5" Click="OnClickFill"></Button>
+            <Button Content="Круг" FontSize="14" Margin="5" Click="OnClickCircle"></Button>
+            <Button Content="Квадрат" FontSize="14" Margin="5" Click="OnClickBox"></Button>
+            <Button Content="Прямоугольник" FontSize="14" Margin="5" Click="OnClickRectangle" ></Button>
+            <Button Content="Эллипс" FontSize="14" Margin="5" Click="OnClickEllipse" ></Button>
+            <Button Content="Звезда" FontSize="14" Margin="5" Click="OnClickStar" ></Button>
+            <Button Content="Рисунок" FontSize="14" Margin="5" Click="OnClickPicture" ></Button>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Влево" Width="50" FontSize="14" Margin="5" Click="OnClickLeft"></Button>
+                <Button Content="Вправо"  Width="50" FontSize="14" Margin="5" Click="OnClickRight"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Вверх"  Width="50" FontSize="14" Margin="5" Click="OnClickUp" ></Button>
+                <Button Content="Вниз"   Width="50" FontSize="14" Margin="5" Click="OnClickDown" ></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5,5" HorizontalAlignment="Center">
+                <TextBlock Text="Ширина: " FontSize="14"/>
+                <TextBox x:Name="TextWidth"  Text="40" Width="40" FontSize="14" />
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Margin="5,5" HorizontalAlignment="Center">
+                <TextBlock Text="Высота: " FontSize="14"/>
+                <TextBox x:Name="TextHeigth"  Text="40" Width="40" FontSize="14" />
+            </StackPanel>
+            <Button Content="Размеры" FontSize="14" Margin="5" Click="OnClickSizes"></Button>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="(--"  Width="50" FontSize="14" Margin="5" Click="OnClickBefore"  ></Button>
+                <Button Content="--)"   Width="50" FontSize="14" Margin="5" Click="OnClickNext"  ></Button>
+            </StackPanel>
         </StackPanel>
         <Canvas x:Name="canvas" Background="#FFB4CBE8"/>
     </DockPanel>

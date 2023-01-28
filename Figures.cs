@@ -16,6 +16,8 @@ namespace fig
             this.canvas = canvas;
         }
         public abstract void Coord(double x, double y);
+
+        public virtual void Sizes(double a, double b) { }
         public virtual void SetColor()
         {
             
